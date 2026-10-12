@@ -69,7 +69,7 @@ Cuando configures una nueva computadora:
 
 ```bash
 # 1. Clona tu repositorio personal
-git clone https://github.com/TU_USUARIO/frontend-craft-skills.git ~/frontend-craft-skills
+git clone https://github.com/jonalxh/skills.git ~/skills
 
 # 2. Enlaza o copia a tu configuración global de Antigravity
 mkdir -p ~/.gemini/config/skills

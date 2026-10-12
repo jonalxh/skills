@@ -86,7 +86,7 @@ git commit -m "feat: initial commit of frontend craft skills suite"
 
 # Vincula a tu cuenta de GitHub y sube los cambios
 git branch -M main
-git remote add origin https://github.com/TU_USUARIO/frontend-craft-skills.git
+git remote add origin https://github.com/jonalxh/skills.git
 git push -u origin main
 ```
 
