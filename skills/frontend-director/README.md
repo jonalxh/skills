@@ -1,75 +1,62 @@
 # 🎯 Frontend Director
 
-> **El orquestador y director de triage de diseño frontend.**
+> **The master triage and meta-orchestrator for frontend design skills.**
 
-## 📌 ¿Qué es?
-`frontend-director` es la meta-skill que actúa como punto de partida y director de arte general para cualquier desarrollo frontend. Su objetivo principal es **eliminar el "AI-slop"** (diseños predecibles, insulsos o de plantilla genérica) analizando la solicitud del usuario, determinando qué skill o combinación de skills frontend usar y aplicando un estricto filtro de control de calidad previo a la entrega del código.
+## 📌 Overview
+`frontend-director` acts as the unified entry point and creative director for all frontend development tasks. Its primary purpose is to **eliminate generic AI slop** (predictable cards, blue/purple gradients, Inter-everywhere, empty filler copy) by diagnosing the user's intent, selecting the optimal specialized skill, or seamlessly synergizing multiple skills.
 
----
-
-## 🧭 ¿Cuándo se activa?
-Se activa automáticamente siempre que la IA detecte una tarea relacionada con:
-- Creación de nuevas páginas, sitios web, landings o componentes desde cero.
-- Rediseño de interfaces que lucen "genéricas", aburridas o de plantilla.
-- Interfaces de alta densidad funcional (dashboards, herramientas de datos, editores).
-- Refinamiento estético, ajuste de micro-interacciones o limpieza de interfaz.
+> **Important Architecture Note:** `frontend-director` is NOT an independent styling library or CSS framework. It is an **optimal orchestration layer** designed to analyze the design problem and deploy the best combination of specialized skills from this suite.
 
 ---
 
-## 🗂️ Matriz de Habilidades Coordinadas
+## 🗂️ Coordinated Skills Matrix
 
-| Skill | Rol | Cuándo se usa |
-|---|---|---|
-| [`creative-ui`](../creative-ui/README.md) | Vanguardia visual y Web APIs modernas | Para layouts asimétricos, paletas en OKLCH, transiciones cinemáticas (*View Transitions*, *Scroll-Driven Animations*, *Subgrid*) y micro-interacciones táctiles. |
-| [`impeccable`](../impeccable/README.md) | Dirección de arte formal y comandos quirúrgicos | Para comandos específicos (`/impeccable shape`, `polish`, `bolder`, `distill`, `animate`) y su estricto filtro `craft-floor`. |
-| [`frontend-design`](../frontend-design/README.md) | Tesis conceptual y tipografía con voz propia | Para fundamentar el diseño en la temática del producto, evitar fuentes predeterminadas y redactar copy auténtico sin relleno. |
-| [`theme-factory`](../theme-factory/README.md) | Paletas y tokens de diseño armónicos | Para elegir o generar paletas estéticas probadas (*Modern Minimalist*, *Midnight Galaxy*, etc.). |
+| Skill | Primary Role | Ideal When | Upstream Source |
+|---|---|---|---|
+| [`creative-ui`](../creative-ui/README.md) | Vanguard layouts, tactile minimalism & modern CSS | Creating asymmetric layouts, OKLCH palettes, micro-interactions, and native browser APIs (*View Transitions*, *Scroll-Driven Animations*, *Subgrid*). | Custom Bespoke Craft |
+| [`impeccable`](../impeccable/README.md) | Design director suite & surgical CLI commands | Using focused commands (`/impeccable shape`, `polish`, `bolder`, `distill`, `animate`) or applying the strict [`craft-floor.md`](../impeccable/reference/craft-floor.md) checklist. | [Paul Bakaus / Impeccable](https://github.com/pbakaus/impeccable) |
+| [`frontend-design`](../frontend-design/README.md) | Subject thesis, distinctive typography & authentic copy | Grounding aesthetics in the subject domain, avoiding default typefaces, and writing concise, filler-free copy. | [Anthropic Skills](https://github.com/anthropics/skills/tree/main/skills/frontend-design) |
+| [`theme-factory`](../theme-factory/README.md) | Color harmonies & design tokens | Selecting or generating cohesive color palettes and font tokens (*Modern Minimalist*, *Midnight Galaxy*, etc.). | [Anthropic Skills](https://github.com/anthropics/skills/tree/main/skills/theme-factory) |
 
 ---
 
-## 🌳 Árbol de Decisión
+## 🌳 Decision Tree
 
 ```
-¿Qué tipo de trabajo frontend se necesita?
+What is the nature of the frontend challenge?
 │
-├── 1. Nuevo proyecto / Superficie desde cero (Greenfield)
-│    └── RUTA A: Sinergia Greenfield
+├── 1. Brand new project / Greenfield surface
+│    └── PATH A: Greenfield Synergy
 │         [frontend-design] → [theme-factory] → [creative-ui] → [impeccable polish]
 │
-├── 2. El diseño actual se ve soso, plano o "de plantilla de IA"
-│    └── RUTA B: Des-generificación & Elevación Estética
-│         [creative-ui (Anti-clichés)] + [impeccable bolder] + [craft-floor]
+├── 2. Existing UI looks generic, bland, or like an AI template
+│    └── PATH B: Anti-Slop Elevation
+│         [creative-ui (Remove cliches)] + [impeccable bolder] + [craft-floor]
 │
-├── 3. La interfaz está saturada, recargada o desordenada
-│    └── RUTA C: Destilación & Minimalismo Radical
-│         [impeccable distill] + [creative-ui (Espacio Negativo & Ritmo)]
+├── 3. Interface feels cluttered, noisy, or over-decorated
+│    └── PATH C: Distillation & Radical Minimalism
+│         [impeccable distill] + [creative-ui (Negative space & rhythm)]
 │
-└── 4. Es una herramienta operativa, editor o dashboard complejo
-     └── RUTA D: Alta Densidad & Usabilidad Operativa
-          [impeccable mode-operate] + [creative-ui (Datos tabulares & Subgrid)]
+└── 4. High-density operational tool, editor, or dashboard
+     └── PATH D: Operational Usability & Density
+          [impeccable mode-operate] + [creative-ui (Tabular data & Subgrid)]
 ```
 
 ---
 
-## 🛡️ Filtro Anti-IA Ineludible (Checklist Pre-Entrega)
+## 🛡️ Mandatory Pre-Delivery Checklist (Anti-Slop Filter)
 
-Antes de entregar código, `frontend-director` audita la interfaz:
-1. ❌ **¿Hay 3 tarjetas iguales con icono, título y texto?**  
-   → **Obligatorio:** Rediseñar como lista editorial interactiva, split asimétrico o layout continuo.
-2. ❌ **¿Se usaron gradientes de texto o degradados azul/púrpura genéricos?**  
-   → **Obligatorio:** Reemplazar por paletas minerales o monocromías en espacio OKLCH.
-3. ❌ **¿Hay un eyebrow label flotando en mayúsculas pequeñas sobre el título?**  
-   → **Obligatorio:** Eliminar. El titular debe hablar por su propio peso tipográfico.
-4. ❌ **¿Las sombras son halos grises difusos (`rgba(0,0,0,0.1)`)?**  
-   → **Obligatorio:** Usar bordes *hairline* sutiles (`oklch(1 0 0 / 8%)`) o elevaciones con tinte ambiental.
-5. ❌ **¿Se utilizó Inter o Roboto por defecto sin personalidad?**  
-   → **Obligatorio:** Elegir tipografías con voz y carácter propio.
-6. ❌ **¿El copy incluye frases infladas como "Potenciado por IA"?**  
-   → **Obligatorio:** Escribir copy austero, directo y humano.
+Before delivering UI code, `frontend-director` verifies that:
+1. ❌ **No 3 identical cards** (icon + H3 + text) as the primary structure.
+2. ❌ **No text gradients** (`bg-clip-text`) or cliché purple/blue/cyan tech gradients.
+3. ❌ **No uppercase tracked-out eyebrow labels** floating above headings.
+4. ❌ **No dirty gray shadows** (`rgba(0,0,0,0.1)`) without ambient tint or crisp hairline borders.
+5. ❌ **No default Inter/Roboto** picked without design justification.
+6. ❌ **No marketing fluff** ("Powered by AI to revolutionize...").
 
 ---
 
-## 💬 Ejemplos de Prompts
-- *"Diseña una página de inicio para un producto de diseño arquitectónico con un estilo muy limpio y minimalista."*
-- *"Este componente parece una plantilla genérica de Tailwind. Dale un rediseño de autor."*
-- *"Organiza este dashboard financiero para que tenga alta densidad de datos y se sienta profesional sin tarjetas anidadas."*
+## 💬 Example Invocations
+- *"Design a landing page for an architectural studio with a clean, high-craft minimalist feel."*
+- *"This component looks like a generic Tailwind template. Give it a bespoke redesign."*
+- *"Structure this financial dashboard for high information density without nested cards."*

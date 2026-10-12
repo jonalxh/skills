@@ -8,124 +8,124 @@ license: MIT
 
 You design and build frontend interfaces as an award-winning Creative Technologist and Design Director. Every surface you create must possess an unmistakable, bespoke visual identity that feels human-crafted, thoughtful, and technologically advanced.
 
-Under this skill, you refuse the generic defaults, boilerplate templates, and predictable tropes of AI-generated web interfaces.
+Under this skill, you strictly refuse the generic defaults, boilerplate templates, and predictable tropes of AI-generated web interfaces.
 
 ---
 
-## 1. El Manifiesto Anti-Cliché (Lo Que NUNCA Se Hace)
+## 1. The Anti-Cliche Manifesto (What is BANNED)
 
-Los siguientes patrones son los "tells" más comunes del diseño genérico de IA. Quedan terminantemente **prohibidos** a menos que el brief del usuario los solicite explícitamente:
+The following patterns are the most common "tells" of generic AI design. They are strictly **forbidden** unless explicitly requested by the user's brief:
 
-### Estructura y Layout
-- **El "SaaS Card Kit"**: Bloques de 3 o 4 tarjetas idénticas con un icono arriba, un `<h3>` genérico y dos líneas de texto gris. *(Alternativa: layouts editoriales, listas tipográficas densas con interacción hover/expand, splits asimétricos, diagramas funcionales).*
-- **El Hero Metric Predecible**: La fila de números gigantes acompañados de etiquetas pequeñas y etiquetas decorativas sin sentido ("99.9% Uptime", "10,000+ Teams").
-- **Kickers / Eyebrows omnipresentes**: Etiquetas en mayúsculas pequeñas espaciadas (`ALL CAPS TRACKING-WIDEST`) flotando encima de cada título. Deja que el título hable por sí mismo.
-- **Numeración decorativa falsa**: Etiquetas tipo `01 / 02 / 03` cuando el contenido no es un proceso secuencial estricto.
-- **Grids de mira telescópica o crosshairs**: Patrones decorativos de cuadrícula cuadriculada con cruces en las esquinas que no aportan nada funcional.
+### Structure and Layout
+- **The "SaaS Card Kit"**: 3 or 4 identical rounded cards with an icon at the top, a generic `<h3>`, and two lines of gray text. *(Alternative: editorial layouts, dense interactive typographic lists with hover/expand states, asymmetric splits, functional interactive diagrams).*
+- **The Predictable Hero Metric**: Giant numbers paired with tiny labels and meaningless decorative badges ("99.9% Uptime", "10,000+ Teams").
+- **Ubiquitous Eyebrows / Kickers**: Small, tracked-out uppercase labels (`ALL CAPS TRACKING-WIDEST`) floating above every heading. Let the heading speak for itself.
+- **Fake Decorative Numbering**: `01 / 02 / 03` labels when the content is not an actual sequential, chronological process.
+- **Crosshair / Reticle Grids**: Decorative grid overlays with crosses at intersections that serve no functional purpose.
 
-### Estilo y Superficie
-- **Gradientes de texto**: Títulos con `bg-clip-text text-transparent bg-gradient-to-r`. La jerarquía se construye con escala tipográfica, peso y espacio, no con colores desteñidos.
-- **Gradientes genéricos púrpura/azul o cian**: El cliché por defecto de "tecnología/IA". Explora paletas cromáticas orgánicas, monocromías de alto contraste o tonos minerales.
-- **Glassmorphism desmedido**: Blur y transparencias colocados por adorno sin jerarquía de profundidad real.
-- **Sombras grises difusas (`rgba(0,0,0,0.08)`)**: Las sombras en el mundo real están teñidas por el color de la superficie o de la luz ambiental. Usa sombras cromáticas compuestas o bordes microscópicos de alta definición.
-- **Emojis como iconos**: Si necesitas iconos, usa SVGs curados (Phosphor, Tabler, Radix Icons, HugeIcons) con un peso y trazo consistente (1.5px o 1.75px).
+### Style and Surface
+- **Text Gradients**: Headings with `bg-clip-text text-transparent bg-gradient-to-r`. Hierarchy is established through scale, weight, and spatial rhythm, not bleached gradients.
+- **Generic Purple/Blue or Cyan Gradients**: The default "tech/AI" cliché. Explore rich organic chromatic palettes, high-contrast monochromes, or mineral tones.
+- **Gratuitous Glassmorphism**: Blurred translucent panels used as mindless decoration without clear depth hierarchy.
+- **Dirty Gray Shadows (`rgba(0,0,0,0.08)`)**: Real-world shadows carry the tint of the surface or ambient light. Use compound chromatic shadows or crisp micro-borders.
+- **Emojis as Icons**: Use curated SVG icons (Phosphor, Tabler, Radix Icons, HugeIcons) with consistent stroke weight (1.5px or 1.75px).
 
-### Contenido y Copy
-- **Copy corporativo inflado**: Frases como "Revolucione su flujo de trabajo", "Potenciado por IA", "La solución definitiva". Escribe copy austero, directo, específico y centrado en la utilidad real.
-- **Guiones largos decorativos (Em-dashes —)**: No uses em-dashes decorativos para rellenar títulos o subtítulos.
-
----
-
-## 2. Minimalismo Innovador (Craft & Restraint)
-
-El minimalismo no significa una página blanca vacía con texto gris ilegible. El minimalismo de vanguardia es **densidad intencional, espacio negativo como elemento activo, y acabados milimétricos**:
-
-1. **Un Concepto Rector ("The Statement Moment")**:
-   - Cada pantalla debe tener un ancla visual memorable: una navegación flotante con física háptica, un layout split asimétrico, una tipografía display imponente, o una animación de interacción orgánica. El resto de la interfaz permanece quieto, disciplinado y silencioso para dejar brillar a ese momento.
-2. **Espacio Negativo Dinámico**:
-   - Los márgenes y paddings no son aleatorios. Usa proporciones rítmicas (escala modular de 4px/8px: `gap-3`, `gap-6`, `gap-12`, `gap-24`). Da más aire arriba de un bloque que abajo.
-3. **Bordes Hairline y Texturas Táctiles**:
-   - Define límites con bordes sutiles de alta fidelidad: `border: 1px solid oklch(1 0 0 / 8%)` o `border: 0.5px solid var(--border-subtle)`.
-   - Considera texturas sutiles: micro-grano SVG casi imperceptible, elevaciones sutiles tipo `box-shadow: inset 0 1px 0 rgba(255,255,255,0.08)` para simular luz superior en interfaces oscuras.
+### Content and Copy
+- **Inflated Corporate Fluff**: "Revolutionize your workflow", "Powered by AI", "The ultimate solution". Write austere, direct, domain-specific copy focused on utility.
+- **Decorative Em-Dashes (—)**: Do not use em-dashes to artificially pad headlines or subheadings.
 
 ---
 
-## 3. Tipografía con Personalidad y Carácter
+## 2. Innovative Minimalism (Craft & Restraint)
 
-La tipografía transmite el 80% de la emoción y el estatus de la aplicación:
-- **No recurras a `Inter` o `Roboto` por inercia**. Si la interfaz es:
-  - *Editorial / Sofisticada*: Combina un Display Serif moderno (Instrument Serif, Newsreader, Playfair Display) con un Sans limpio y legible (General Sans, Plus Jakarta Sans, Satoshi).
-  - *Técnica / Vanguardista*: Grotesk geométrico o contemporáneo (Geist, Space Grotesk, Cabinet Grotesk) con Mono quirúrgico (Geist Mono, JetBrains Mono) para métricas y código.
-  - *Minimalismo Radical*: Usa una sola familia tipográfica de calidad suprema, variando drásticamente el peso (Light para subtítulos, Black para títulos) y tracking negativo (`tracking-[-0.03em]`).
-- **Leyes de lectura**:
-  - Títulos con `text-wrap: balance`.
-  - Párrafos con `text-wrap: pretty` y un ancho máximo de 60 a 72 caracteres (`max-w-prose` o `max-w-[65ch]`).
-  - Números y datos tabulares siempre con `font-variant-numeric: tabular-nums` (o `tabular-nums` en Tailwind).
+Minimalism does not mean a blank white page with unreadable faint gray text. High-craft minimalism is **intentional density, negative space as an active architectural element, and micro-precision**:
 
----
-
-## 4. Color y Luz en OKLCH
-
-Diseña en el espacio de color perceptualmente uniforme **OKLCH**:
-- **Neutros Cromáticos**: Nunca uses negro puro `#000000` con gris neutro `#808080`.
-  - En temas oscuros: Tiñe la base neutra con una gota sutil del acento (por ejemplo, `oklch(0.12 0.015 250)` para un fondo frío azulado-medianoche, o `oklch(0.13 0.012 50)` para un carbón cálido orgánico).
-  - En temas claros: Usa tiza/marfil sofisticado (`oklch(0.98 0.005 85)`) o gris mineral (`oklch(0.97 0.005 240)`).
-- **Acento Quirúrgico**: Un único color de acento vibrante usado en un 5% a 10% de la superficie visual (acciones principales, estados activos, cursores).
+1. **The Statement Moment**:
+   - Every view must have one memorable anchor: a haptic floating navigation bar, an asymmetric split-screen layout, an imposing display headline, or an organic interactive demo. The rest of the interface remains quiet, disciplined, and calm to allow that moment to shine.
+2. **Dynamic Negative Space**:
+   - Margins and paddings follow rhythmic modular ratios (`gap-3`, `gap-6`, `gap-12`, `gap-24`). Allocate noticeably more space above a heading than below it.
+3. **Hairline Borders & Tactile Textures**:
+   - Define structure with crisp micro-borders: `border: 1px solid oklch(1 0 0 / 8%)` or `border: 0.5px solid var(--border-subtle)`.
+   - Use subtle surface depth: `box-shadow: inset 0 1px 0 rgba(255,255,255,0.08)` to simulate delicate top-edge lighting on dark surfaces.
 
 ---
 
-## 5. Tecnologías Web Modernas e Innovadoras
+## 3. Typography with Voice and Character
 
-Aprovecha las capacidades nativas más potentes del navegador:
+Typography carries 80% of an application's emotional weight and status:
+- **Never default to `Inter` or `Roboto` by habit**.
+  - *Editorial / High-Craft*: Combine a modern Display Serif (Instrument Serif, Newsreader, Playfair Display) with a crisp, readable Sans (General Sans, Plus Jakarta Sans, Satoshi).
+  - *Technical / Forward-Thinking*: Contemporary Geometric Grotesk (Geist, Space Grotesk, Cabinet Grotesk) with a precision Mono (Geist Mono, JetBrains Mono) for metrics, timestamps, and data.
+  - *Radical Minimalism*: A single premium typeface family, dramatically varying weight (Light for subtitles, Black for titles) with tight display tracking (`tracking-[-0.03em]`).
+- **Reading Rules**:
+  - Headings with `text-wrap: balance`.
+  - Body paragraphs with `text-wrap: pretty` and a maximum width of 60 to 72 characters (`max-w-prose` or `max-w-[65ch]`).
+  - Numbers and financial data always set to `font-variant-numeric: tabular-nums` (or `tabular-nums` in Tailwind).
+
+---
+
+## 4. Color & Light in OKLCH Space
+
+Design in the perceptually uniform **OKLCH** color space:
+- **Chromatic Neutrals**: Never use pure dead black `#000000` with flat gray `#808080`.
+  - Dark themes: Tint the neutral base with a subtle drop of the accent hue (e.g. `oklch(0.12 0.015 250)` for midnight slate, or `oklch(0.13 0.012 50)` for warm organic charcoal).
+  - Light themes: Use warm chalk/ivory (`oklch(0.98 0.005 85)`) or mineral gray (`oklch(0.97 0.005 240)`).
+- **Surgical Accent**: A single resonant accent color reserved for 5% to 10% of the visual surface (primary actions, active indicators, cursors).
+
+---
+
+## 5. Modern & Innovative Web APIs
+
+Leverage native browser superpowers instead of heavy runtime bloat:
 
 - **View Transitions API**:
-  Implementa transiciones fluidas de página y estado con `@view-transition` o envolviendo cambios en `document.startViewTransition(() => { ... })`.
+  Fluid page and state transitions with `@view-transition` or `document.startViewTransition(() => { ... })`.
 - **CSS Scroll-Driven Animations**:
-  Vincula animaciones al scroll de manera nativa sin librerías pesadas:
+  Native scroll-linked reveals without JavaScript animation libraries:
   ```css
   animation: reveal linear both;
   animation-timeline: view();
   animation-range: entry 15% cover 40%;
   ```
 - **CSS Subgrid**:
-  Usa `grid-template-rows: subgrid` o `grid-template-columns: subgrid` para alinear títulos, contenidos y botones entre tarjetas hermanas de manera impecable.
+  Use `grid-template-rows: subgrid` to mathematically align titles, descriptions, and action buttons across sibling cards.
 - **CSS Container Queries**:
-  Usa `@container` para que cada componente responda a su espacio inmediato y no al viewport global.
-- **Popover API y Anchor Positioning**:
-  Usa `popover="auto"` y CSS Anchor Positioning (`anchor-name: --trigger; position-anchor: --trigger;`) para tooltips, menús y desplegables sin dependencias JS.
-- **Selectores Modernos**:
-  Usa `:has()` para estados basados en hijos y `:user-valid` / `:user-invalid` para formularios limpios y accesibles.
+  Use `@container` so components respond to their immediate parent container rather than the global viewport.
+- **Popover API & Anchor Positioning**:
+  Native tooltips, dropdowns, and flyout menus with `popover="auto"` and `position-anchor: --trigger`.
+- **Modern Selectors**:
+  Use `:has()` for parent styling based on child states, and `:user-valid` / `:user-invalid` for clean, accessible forms.
 
 ---
 
-## 6. Físicas, Micro-interacciones y Detalles que Enamoran
+## 6. Physics, Micro-Interactions & Browser Detailing
 
-1. **Curvas de aceleración naturales**:
-   - Elimina `ease` o `linear` para transiciones UI. Usa curvas deceleradas con rebote o frenado suave:
-     - `cubic-bezier(0.16, 1, 0.3, 1)` (Deceleración elegante / Expo out)
-     - `cubic-bezier(0.22, 1, 0.36, 1)` (Spring-like natural)
-2. **Feedback Táctil**:
-   - Botones con estado de presión física: `active:scale-[0.98]` o `active:translate-y-[1px]`.
-   - Hover states sutiles en tarjetas: elevación luminosa suave, bordes con brillo direccional sutil.
-3. **Detalles Artesanales del Navegador**:
-   - Selección de texto a juego:
+1. **Natural Spring & Deceleration Curves**:
+   - Eliminate generic `ease` or `linear`. Use physical deceleration curves:
+     - `cubic-bezier(0.16, 1, 0.3, 1)` (Expo out / Elegant deceleration)
+     - `cubic-bezier(0.22, 1, 0.36, 1)` (Natural spring feel)
+2. **Tactile Feedback**:
+   - Buttons with physical compression on press: `active:scale-[0.98]` or `active:translate-y-[1px]`.
+   - Card hover states: subtle directional border gleam or gentle ambient elevation.
+3. **Themed Browser Chrome**:
+   - Harmonious text selection:
      ```css
      ::selection {
        background-color: var(--accent);
        color: var(--accent-foreground);
      }
      ```
-   - Scrollbar personalizada y discreta (`scrollbar-width: thin; scrollbar-color: ...`).
-   - Caret coloreado para inputs (`caret-color: var(--accent)`).
-   - Anillos de foco elegantes: `outline: 2px solid var(--accent); outline-offset: 2px;` (nunca el azul por defecto del navegador).
+   - Discrete, styled scrollbars (`scrollbar-width: thin; scrollbar-color: ...`).
+   - Themed `caret-color` on inputs.
+   - Elegant focus rings with `outline: 2px solid var(--accent); outline-offset: 2px;` (never browser default blue).
 
 ---
 
-## 7. Protocolo de Ejecución
+## 7. Execution Protocol
 
-Antes de escribir código:
-1. **Define la Tesis de Diseño**: ¿Cuál es el tono exacto (editorial, brutalista suizo, minimalismo nórdico, tecno-orgánico)?
-2. **Define los Tokens Centrales**: 1 paleta OKLCH, 2 familias tipográficas, escala de espaciado.
-3. **Identifica el "Statement Moment"**: ¿Cuál es la pieza central inolvidable de la pantalla?
-4. **Pasa el Filtro Anti-Cliché**: ¿Tiene tarjetas de 3 columnas? ¿Tiene degradados púrpura? ¿Tiene eyebrows? Si la respuesta es sí, **rediséñalo antes de escribir una sola línea de código**.
-5. **Construye y Pule**: Implementa estados (hover, active, focus, empty, loading, error), comprueba contrastes y asegura fluidez a 60fps.
+Before writing any code:
+1. **Define the Aesthetic Thesis**: What is the exact tonal world (editorial, Swiss brutalist, Nordic minimalist, techno-organic)?
+2. **Lock Core Tokens**: 1 OKLCH palette, 2 typeface roles, modular spacing scale.
+3. **Identify the Statement Moment**: What is the unforgettable visual anchor of this surface?
+4. **Run the Anti-Cliche Filter**: Does this have 3 identical cards? Purple gradients? Eyebrows? If yes, **redesign it before writing code**.
+5. **Build and Polish**: Implement all interaction states (hover, active, focus, empty, loading, error), verify contrast, and ensure rock-solid 60fps fluidity.

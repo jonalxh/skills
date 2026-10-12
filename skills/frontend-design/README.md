@@ -1,34 +1,39 @@
 # ✒️ Frontend Design
 
-> **Diseño visual intencional, tipografía con personalidad y copywriting auténtico.**
+> **Intentional visual design, distinctive typography, and authentic, concise copy.**
 
-## 📌 ¿Qué es?
-`frontend-design` es el estándar de la industria (popularizado originalmente por Anthropic) concebido para evitar que la IA caiga en los "hábitos seguros" y cree páginas clónicas. Obliga al modelo a actuar como el líder de diseño de un estudio boutique, tomando decisiones deliberadas y adaptadas al sujeto real del producto.
-
----
-
-## 🔑 Principios Clave
-
-### 1. Anclaje en la Materia del Sujeto
-Antes de trazar una línea de código o estilo, la skill exige identificar la industria, el público objetivo y la función primaria del diseño. La identidad visual de un dispositivo médico de precisión difiere radicalmente de la de una plataforma de arte generativo o una firma de moda.
-
-### 2. Tipografía con Voz Propia
-- **No a la inercia de Inter/Roboto:** Se seleccionan tipografías con carácter según la personalidad de la marca.
-- **Escala armónica:** Jerarquía basada en la escala de *The Elements of Typographic Style*, con pesos y anchos deliberados.
-- **Límites de lectura:** Líneas de menos de 80 caracteres para maximizar la legibilidad.
-- **No a los trucos baratos:** No resaltar solo una palabra en cursiva/color dentro del titular ni usar mayúsculas forzadas en etiquetas.
-
-### 3. La Estructura es Información, no Decoración
-Bordes, líneas, etiquetas y numeraciones existen para estructurar datos, no para rellenar espacios en blanco. Si se usan números (`01 / 02 / 03`), debe ser porque el contenido es verdaderamente una secuencia cronológica o procedimental.
-
-### 4. Copywriting como Parte del Diseño
-- Las palabras son contenido de diseño, no relleno.
-- Escribe desde la perspectiva del usuario con verbos activos directos ("Guardar cambios" en lugar de "Enviar").
-- Errores y estados vacíos deben orientar con claridad, sin disculpas innecesarias ni vaguedades.
+* **Upstream Source:** [Anthropic Skills: `frontend-design`](https://github.com/anthropics/skills/tree/main/skills/frontend-design)
+* **License:** Complete terms in `LICENSE.txt`
 
 ---
 
-## 🔄 El Proceso en Dos Pasadas
-1. **Paso 1 (Plan & Tesis):** Definir una paleta base de 4–6 colores, las familias tipográficas, el concepto de layout y los principios rectores.
-2. **Paso 2 (Revisión Anti-Cliché):** Evaluar el plan contra el brief. Si algo huele a plantilla predecible que se usaría para cualquier otra web, **se rediseña antes de programar**.
-3. **Paso 3 (Construcción & Crítica):** Ejecutar el código cuidando la especificidad CSS y la accesibilidad.
+## 📌 Overview
+Originally created and open-sourced by Anthropic (`anthropics/skills`), `frontend-design` is the industry benchmark for preventing generic "AI slop" web pages. It forces the agent to act as a design lead at a boutique design studio, committing to an opinionated point of view grounded specifically in the subject matter of the client's product.
+
+---
+
+## 🔑 Core Principles
+
+### 1. Ground Designs in the Subject Matter
+Before writing code or styling, determine the subject matter, audience, and primary job of the interface. A fintech analytics dashboard requires completely different aesthetics, vernacular, and density than an artisanal studio or generative audio workstation.
+
+### 2. Typography with Character
+- **Break the Inter/Roboto habit:** Choose typefaces with deliberate personality matched to the brief.
+- **Harmonic Scale:** Follow the typographic proportions of *The Elements of Typographic Style*.
+- **Line Length Constraints:** Maintain line lengths under 80 characters for optimal reading ergonomics.
+- **No Decorative Tells:** Never accent just a single random word in a headline or use forced all-caps labels.
+
+### 3. Visual Structure is Information, Not Decoration
+Lines, borders, dividers, and numbering must encode functional structure, not just fill empty whitespace. If numbers are used (`01 / 02 / 03`), it must be because the content represents an actual step-by-step sequence.
+
+### 4. Writing as Core Design Content
+- Words are design content, not placeholder filler.
+- Write from the user's perspective with active verbs ("Save changes" instead of "Submit").
+- Error messages and empty states guide recovery with clarity—no vague apologies or filler phrases.
+
+---
+
+## 🔄 The Two-Pass Workflow
+1. **Pass 1 (Design Plan & Thesis):** Define a base palette (4–6 named hex values), typeface roles, layout concept, and guiding principles.
+2. **Pass 2 (Anti-Cliche Review):** Review the plan against the brief. If any part looks like a generic template you would produce for any other client, **revise it before writing code**.
+3. **Pass 3 (Build & Critique):** Implement the solution while testing accessibility, contrast, and responsive layout.

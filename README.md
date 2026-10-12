@@ -1,103 +1,110 @@
 # 💎 Frontend Craft Skills (Anti-AI-Slop Suite)
 
-> Colección definitiva de **Agent Skills** para desarrollo frontend orientada a crear interfaces **únicas, bonitas, minimalistas e innovadoras**, eliminando por completo el aspecto genérico y predecible de las plantillas generadas por IA.
+> The definitive collection of **Agent Skills** for frontend engineering, engineered to build **bespoke, beautiful, minimalist, and innovative** user interfaces while eliminating generic, cookie-cutter "AI slop".
 
-Compatible con **Google Antigravity**, **Claude Code**, **Cursor**, **Codex** y el estándar abierto de Agent Skills.
-
----
-
-## ⚡ El Problema: "AI-Slop" en el Frontend
-
-La mayoría de los modelos de IA generan siempre la misma interfaz:
-- El *"SaaS Card Kit"* (3 tarjetas idénticas con bordes redondeados y sombra gris difusa).
-- Gradientes violeta/azul cliché sobre fondos oscuros o blancos planos.
-- La fuente *Inter* o *Roboto* usada por defecto sin personalidad.
-- Etiquetas en mayúsculas pequeñas espaciadas flotando sobre cada titular (`EYEBROW LABELS`).
-- Copy corporativo inflado ("Potenciado por IA para revolucionar tu flujo de trabajo").
-- Sombras grises sucias sin dirección ni profundidad real.
-
-## 🎯 La Solución: Esta Suite de Skills
-
-Esta colección transforma a tu agente de IA en un **Director de Diseño y Creative Technologist**, obligándolo a pensar con criterio de autor, aplicar layouts asimétricos, paletas en espacio OKLCH, tipografías con voz propia y micro-interacciones táctiles.
+Natively compatible with **Google Antigravity**, **Claude Code**, **Cursor**, **Codex**, and any assistant adhering to the open **Agent Skills** specification (`SKILL.md`).
 
 ---
 
-## 📂 Contenido del Repositorio
+## ⚡ The Problem: "AI Slop" in Frontend Generation
 
-El repositorio está organizado con una carpeta para cada skill y su guía correspondiente:
+Default AI generation tends to produce the same predictable interfaces regardless of product context:
+- **The "SaaS Card Kit"**: 3 identical rounded cards with soft gray drop-shadows and icons on top.
+- **Tired Gradients**: Purple/blue or cyan accents and text gradients (`bg-clip-text`) used as a crutch for hierarchy.
+- **Default Typography**: Monotonous fallback to *Inter* or *Roboto* with zero domain character.
+- **Decorative Clutter**: Floating uppercase tracked-out eyebrow labels, arbitrary `01/02/03` numbering, and marketing fluff ("Powered by AI to revolutionize your workflow").
+- **Muddy Shadows**: Dirty gray drop-shadows (`rgba(0,0,0,0.1)`) without ambient lighting or directional physics.
+
+---
+
+## 🎯 The Solution: This Suite of Skills
+
+This suite transforms your AI assistant into an award-winning **Design Director and Creative Technologist**, enforcing asymmetric compositions, **OKLCH** color spaces, domain-specific typography pairings, native browser modern APIs (*View Transitions*, *Subgrid*, *Scroll-Driven Animations*), and tactile micro-interactions.
+
+---
+
+## 🏗️ Architecture: The Role of `frontend-director`
+
+> [!NOTE]
+> **`frontend-director` is NOT an independent styling library or CSS framework.**
+> It serves as an **optimal meta-orchestration layer**. When you prompt your AI coding agent, `frontend-director` acts as the chief creative director: it diagnoses the challenge, selects the most suitable specialized skill, or synergizes multiple tools together while enforcing a mandatory pre-delivery quality gate.
+
+---
+
+## 🌐 Inspiration & Upstream Sources
+
+We stand on the shoulders of giants. This suite curates and builds upon industry-leading open-source design skills:
+
+| Skill | Description | Upstream Source / Credit |
+|---|---|---|
+| **`frontend-director`** | Master triage & meta-orchestrator uniting the suite | Custom meta-orchestration layer |
+| **`creative-ui`** | Vanguard layouts, OKLCH color spaces, and modern CSS APIs | Custom high-craft engineering |
+| **`impeccable`** | Design director suite, surgical CLI verbs, and `craft-floor` rules | [Paul Bakaus / Impeccable](https://github.com/pbakaus/impeccable) (v4.0.0) |
+| **`frontend-design`** | Subject thesis, distinctive typography pairings, and clean copy | [Anthropic: `anthropics/skills`](https://github.com/anthropics/skills/tree/main/skills/frontend-design) |
+| **`theme-factory`** | 10 curated color palettes and typography token systems | [Anthropic: `anthropics/skills`](https://github.com/anthropics/skills/tree/main/skills/theme-factory) |
+
+---
+
+## 📂 Repository Layout
 
 ```text
-frontend-craft-skills/
-├── README.md                          # Este catálogo general
-├── INSTALL.md                         # Guía de instalación rápida y sincronización
+skills/
+├── README.md                          # This catalog and design manifesto
+├── INSTALL.md                         # Multi-machine and cross-agent setup guide
+├── update.sh                          # Automated upstream synchronization script
 └── skills/
-    ├── frontend-director/             # 🎯 EL ORQUESTADOR CENTRAL
-    │   ├── SKILL.md                   # Definición agéntica
-    │   └── README.md                  # Guía y matriz de decisiones
+    ├── frontend-director/             # 🎯 MASTER META-ORCHESTRATOR
+    │   ├── SKILL.md                   # Agentic definition
+    │   └── README.md                  # Triage matrix, decision tree & playbooks
     │
-    ├── creative-ui/                   # 🎨 VANGUARDIA, OKLCH & APIS MODERNAS
-    │   ├── SKILL.md                   # Definición agéntica
-    │   └── README.md                  # Guía de layouts, físicas y modern CSS
+    ├── creative-ui/                   # 🎨 VANGUARD, OKLCH & MODERN WEB APIS
+    │   ├── SKILL.md                   # Agentic definition
+    │   └── README.md                  # Layouts, physics, haptics & modern CSS
     │
-    ├── impeccable/                    # ✨ SUITE DE DIRECCIÓN Y COMANDOS
-    │   ├── SKILL.md                   # Definición agéntica v4.0.0
-    │   ├── README.md                  # Guía de comandos (/impeccable shape, polish...)
-    │   ├── reference/                 # Documentación y craft-floor
-    │   └── scripts/                   # CLI ejecutable
+    ├── impeccable/                    # ✨ DESIGN DIRECTOR & SURGICAL COMMANDS
+    │   ├── SKILL.md                   # Agentic definition (v4.0.0)
+    │   ├── README.md                  # Command reference (/impeccable shape, polish...)
+    │   ├── reference/                 # Playbooks & craft-floor rules
+    │   └── scripts/                   # Executable CLI binaries
     │
-    ├── frontend-design/               # ✒️ TESIS VISUAL & TIPOGRAFÍA
-    │   ├── SKILL.md                   # Definición agéntica (Estándar Anthropic)
-    │   └── README.md                  # Guía de dos pasadas y voz de marca
+    ├── frontend-design/               # ✒️ DOMAIN THESIS & TYPOGRAPHY
+    │   ├── SKILL.md                   # Agentic definition (Anthropic standard)
+    │   └── README.md                  # Two-pass workflow & anti-cliche guidelines
     │
-    └── theme-factory/                 # 🌈 SISTEMAS DE COLOR & TOKENS
-        ├── SKILL.md                   # Definición agéntica
-        ├── README.md                  # Guía de aplicación de temas
-        └── themes/                    # 10 temas curados (Modern Minimalist, etc.)
+    └── theme-factory/                 # 🌈 COLOR SYSTEMS & DESIGN TOKENS
+        ├── SKILL.md                   # Agentic definition
+        ├── README.md                  # Theme application guide
+        └── themes/                    # 10 curated theme specs (Modern Minimalist, etc.)
 ```
 
 ---
 
-## 🧭 Resumen de Skills
+## 🔄 Keeping Skills Up to Date
 
-| Skill | Función Principal | Cuándo se usa |
-|---|---|---|
-| [**`frontend-director`**](skills/frontend-director/README.md) | **Orquestador y Triage** | Punto de entrada. Evalúa el proyecto, decide qué skills usar y aplica el filtro de calidad antes de generar código. |
-| [**`creative-ui`**](skills/creative-ui/README.md) | **Vanguardia & Modern CSS** | Layouts asimétricos, espacio OKLCH, View Transitions, Subgrid, Scroll-Driven Animations y micro-interacciones táctiles. |
-| [**`impeccable`**](skills/impeccable/README.md) | **Comandos Quirúrgicos** | Comandos como `/impeccable shape`, `polish`, `bolder`, `distill`, `animate`, más el estricto `craft-floor`. |
-| [**`frontend-design`**](skills/frontend-design/README.md) | **Tesis & Tipografía** | Diseños adaptados al tema del producto, fuentes con carácter y copywriting austero y directo. |
-| [**`theme-factory`**](skills/theme-factory/README.md) | **Paletas & Tokens** | 10 paletas curadas de alto nivel estético (*Modern Minimalist*, *Desert Rose*, *Midnight Galaxy*). |
-
----
-
-## 🚀 Cómo Subir este Repositorio a tu GitHub
-
-Para tener tus skills respaldadas en GitHub y compartirlas entre tus equipos:
-
-1. **Crea un nuevo repositorio en GitHub** (por ejemplo, `frontend-craft-skills`).
-2. **Ejecuta los siguientes comandos desde esta carpeta**:
+Keep your skills synchronized with upstream developments effortlessly using the included `update.sh` script:
 
 ```bash
-cd /home/jonathan/.gemini/antigravity/scratch/frontend-craft-skills
+# Update skills from upstream repositories:
+./update.sh
 
-# Inicializa Git y haz el commit inicial
-git init
-git add .
-git commit -m "feat: initial commit of frontend craft skills suite"
-
-# Vincula a tu cuenta de GitHub y sube los cambios
-git branch -M main
-git remote add origin https://github.com/jonalxh/skills.git
-git push -u origin main
+# Update skills and immediately sync to global Antigravity config (~/.gemini/config/skills/):
+./update.sh --sync-global
 ```
 
 ---
 
-## 🛠️ Instalación en Nuevos Equipos
+## 🚀 Quick Installation
 
-Consulta [**`INSTALL.md`**](INSTALL.md) para ver las instrucciones completas paso a paso para Google Antigravity, Claude Code, Cursor y otros entornos.
+For full installation options (Google Antigravity, Claude Code, Cursor, Windsurf), see [**`INSTALL.md`**](INSTALL.md).
+
+### Global Installation in Google Antigravity:
+```bash
+mkdir -p ~/.gemini/config/skills
+cp -r skills/* ~/.gemini/config/skills/
+```
 
 ---
 
-## 📄 Licencia
+## 📄 License
 
-Licenciado bajo términos MIT / Apache 2.0 según cada componente. Libre para uso personal y comercial.
+Licensed under the MIT / Apache 2.0 licenses matching upstream components. Free for personal and commercial usage.

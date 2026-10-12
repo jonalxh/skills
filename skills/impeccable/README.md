@@ -1,47 +1,53 @@
 # ✨ Impeccable
 
-> **Suite completa de dirección de arte, comandos quirúrgicos y calidad de diseño.**
+> **Design director suite, surgical commands, and quality audit engine.**
 
-## 📌 ¿Qué es?
-`impeccable` (v4.0.0) es una herramienta de dirección de diseño de vanguardia concebida para dotar a la IA del criterio estético de un director creativo galardonado. Funciona mediante un conjunto de comandos ejecutables y un riguroso archivo de reglas anti-patrones ([`reference/craft-floor.md`](reference/craft-floor.md)).
+* **Upstream Source:** [Paul Bakaus / Impeccable](https://github.com/pbakaus/impeccable)
+* **Version:** 4.0.0
+* **License:** Apache 2.0
 
 ---
 
-## 🎛️ Tabla de Comandos Especializados
+## 📌 Overview
+`impeccable` equips AI agents with the perspective and rigor of an award-winning design director. It routes design tasks through specific commands, structured context files (`PRODUCT.md` and `DESIGN.md`), and an unyielding anti-pattern quality floor ([`reference/craft-floor.md`](reference/craft-floor.md)).
 
-Puedes invocar estos comandos directamente mediante `/impeccable <comando>`:
+---
 
-| Comando | Categoría | Qué hace |
+## 🎛️ Command Cheat Sheet
+
+Invoke these commands directly using `/impeccable <command>`:
+
+| Command | Category | Description |
 |---|---|---|
-| `shape [feature]` | Construcción | Planifica la experiencia de usuario y arquitectura visual antes de programar. |
-| `polish [target]` | Refinamiento | Pase final de control de calidad, micro-espaciados y consistencia antes de enviar. |
-| `bolder [target]` | Refinamiento | Amplifica diseños planos o tímidos con jerarquía dramática y contrastes de peso. |
-| `quieter [target]` | Refinamiento | Serena y suaviza diseños agresivos o sobreestimulantes. |
-| `distill [target]` | Refinamiento | Minimalismo puro: elimina lo superfluo y deja solo la esencia funcional. |
-| `animate [target]` | Mejora | Añade animaciones intencionadas y orquestadas con sentido de producto. |
-| `colorize [target]` | Mejora | Incorpora color estratégico y coherente a interfaces monocromáticas. |
-| `typeset [target]` | Mejora | Perfecciona la jerarquía tipográfica, pesos, tracking y longitud de línea. |
-| `layout [target]` | Mejora | Corrige el ritmo visual, alineaciones y proporciones espaciales. |
-| `delight [target]` | Mejora | Agrega detalles memorables, personalidad y pequeñas sorpresas agradables. |
-| `overdrive [target]` | Mejora | Empuja la estética al límite creativo para proyectos vanguardistas. |
-| `clarify [target]` | Corrección | Pule el copy de la interfaz, etiquetas y mensajes de error. |
-| `critique [target]` | Evaluación | Auditoría de diseño UX con puntuación heurística detallada. |
-| `audit [target]` | Evaluación | Chequeo técnico de calidad (accesibilidad a11y, rendimiento y respuesta móvil). |
+| `shape [feature]` | Build | Plan UX and UI architecture before writing code. |
+| `polish [target]` | Refine | Final quality pass for spacing, micro-alignments, and state consistency. |
+| `bolder [target]` | Refine | Amplify bland or timid designs with dramatic typographic scale and contrast. |
+| `quieter [target]` | Refine | Tone down aggressive, noisy, or overstimulating interfaces. |
+| `distill [target]` | Refine | Radical minimalism: strip away complexity and retain only functional essence. |
+| `animate [target]` | Enhance | Add purposeful, choreographed motion with clear product utility. |
+| `colorize [target]` | Enhance | Introduce strategic, cohesive color accents to monochromatic UIs. |
+| `typeset [target]` | Enhance | Perfect typography hierarchy, line lengths, weights, and tracking. |
+| `layout [target]` | Enhance | Fix visual rhythm, alignments, and spatial proportions. |
+| `delight [target]` | Enhance | Inject memorable personality and craft micro-details. |
+| `overdrive [target]` | Enhance | Push aesthetics past conventional limits for visionary surfaces. |
+| `clarify [target]` | Fix | Improve UX copy, labels, tooltips, and error recovery states. |
+| `critique [target]` | Evaluate | UX review with detailed heuristic scoring. |
+| `audit [target]` | Evaluate | Technical quality audit (accessibility, Core Web Vitals, mobile responsiveness). |
 
 ---
 
-## 📐 El Suelo de Calidad (`craft-floor.md`)
+## 📐 The Craft Floor (`craft-floor.md`)
 
-`impeccable` impone reglas mecánicas ineludibles:
-- **Contraste estricto:** Texto base ≥4.5:1, texto grande ≥3:1.
-- **Tipografía rigurosa:** Medida de lectura óptima entre 65–75 caracteres por línea.
-- **Baneos absolutos:** Prohibidos los kickers/eyebrows sobre los titulares, prohibidas las tarjetas idénticas como único recurso estructural y prohibidos los gradientes de texto como sustitutos de jerarquía.
-- **Acabados del navegador:** Personalización de selección (`::selection`), caret, focus rings y números tabulares obligatorios.
+`impeccable` enforces non-negotiable mechanical standards:
+- **Contrast Ratios:** Body text ≥4.5:1, large text ≥3:1.
+- **Reading Measure:** 65–75 characters per line for optimal scanning.
+- **Strict Bans:** No kickers/eyebrows above headings, no nested cards, no gradient text substituting for hierarchy.
+- **Browser Surfaces:** Themed selection (`::selection`), caret color, tabular numerals, and custom scrollbars.
 
 ---
 
-## 💬 Ejemplos de Invocación
-- *"`/impeccable shape checkout-flow`"* (Planifica la UI del flujo de pago).
-- *"`/impeccable bolder hero-section`"* (Haz el hero mucho más potente e impactante).
-- *"`/impeccable distill navigation-menu`"* (Simplifica el menú a su máxima expresión minimalista).
-- *"`/impeccable polish`"* (Realiza una revisión final de calidad en la pantalla actual).
+## 💬 Example Invocations
+- *"`/impeccable shape checkout-flow`"* (Architect the UI flow for a checkout experience).
+- *"`/impeccable bolder hero-section`"* (Make the hero section punchy and confident).
+- *"`/impeccable distill navigation-menu`"* (Strip down the navigation to pure minimalism).
+- *"`/impeccable polish`"* (Run a final visual QA pass on the current view).

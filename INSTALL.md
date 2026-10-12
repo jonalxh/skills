@@ -1,42 +1,40 @@
-# 📦 Guía de Instalación y Portabilidad Multi-Equipo
+# 📦 Installation & Portability Guide
 
-Este repositorio contiene skills diseñadas bajo el estándar abierto **Agent Skills** (`SKILL.md`), compatibles con **Google Antigravity**, **Claude Code**, **Cursor**, **Codex** y otros entornos con asistentes agénticos.
+This repository contains skills developed under the open **Agent Skills** standard (`SKILL.md`), making them natively compatible with **Google Antigravity**, **Claude Code**, **Cursor**, **Codex**, and any agentic coding assistant that discovers skills.
 
 ---
 
-## 🚀 1. Instalación en Google Antigravity
+## 🚀 1. Installation in Google Antigravity
 
-### Opción A: Instalación Global (Disponible en todos tus proyectos)
-Para que estas skills estén disponibles en cualquier sesión de Antigravity en tu máquina:
+### Option A: Global Installation (Available across all workspaces)
+To make these skills globally discoverable by Antigravity on your machine:
 
 ```bash
-# Crear el directorio global de skills si no existe
+# Create the global skills directory if it doesn't exist
 mkdir -p ~/.gemini/config/skills
 
-# Copiar todas las skills a tu configuración global
+# Copy skills to your global configuration
 cp -r skills/* ~/.gemini/config/skills/
 ```
 
-### Opción B: Instalación por Proyecto (Específica del repositorio)
-Si quieres versionar estas skills dentro de un proyecto específico para que todo tu equipo las tenga:
+### Option B: Project-Level Installation (Versioned with your team)
+To commit these skills directly into a specific project repository:
 
 ```bash
-# Dentro de la raíz de tu proyecto
+# Inside your project's root directory
 mkdir -p .agents/skills
 
-# Copiar las skills a la carpeta de agentes del proyecto
-cp -r /ruta/a/frontend-craft-skills/skills/* .agents/skills/
+# Copy skills into the project's agent folder
+cp -r /path/to/skills/skills/* .agents/skills/
 
-# Añadir a Git
+# Commit to version control
 git add .agents/skills
-git commit -m "feat: add high-craft frontend skills"
+git commit -m "feat: add high-craft frontend skills suite"
 ```
 
 ---
 
-## 🤖 2. Instalación en Claude Code (Anthropic)
-
-Para usar estas skills con Claude Code:
+## 🤖 2. Installation in Claude Code (Anthropic)
 
 ### Global:
 ```bash
@@ -44,37 +42,48 @@ mkdir -p ~/.claude/skills
 cp -r skills/* ~/.claude/skills/
 ```
 
-### Por Proyecto:
+### Per Project:
 ```bash
 mkdir -p .claude/skills
-cp -r /ruta/a/frontend-craft-skills/skills/* .claude/skills/
+cp -r /path/to/skills/skills/* .claude/skills/
 ```
 
 ---
 
-## 💻 3. Instalación en Cursor / Windsurf / Codex CLI
+## 💻 3. Installation in Cursor / Windsurf / Codex CLI
 
-Copia la carpeta `skills/` en la ruta de skills de tu editor/agente:
+Copy the `skills/` folder into your editor's agent skills directory:
 ```bash
-# Convención universal .agent/skills o .agents/skills
+# Standard .agent/skills discovery path
 mkdir -p .agent/skills
 cp -r skills/* .agent/skills/
 ```
 
 ---
 
-## 🔄 4. Cómo clonar y sincronizar en nuevos equipos
+## 🔄 4. Keeping Skills Updated
 
-Cuando configures una nueva computadora:
+This repository includes an automated update script (`update.sh`) to fetch the latest upstream changes from original repositories and keep your local environment synchronized:
 
 ```bash
-# 1. Clona tu repositorio personal
+# 1. Update skills from upstream repositories
+./update.sh
+
+# 2. Update and immediately sync to global Antigravity config
+./update.sh --sync-global
+```
+
+---
+
+## 🖥️ 5. Setting Up on a New Machine
+
+When setting up on a new computer:
+
+```bash
+# 1. Clone your personal repository
 git clone https://github.com/jonalxh/skills.git ~/skills
 
-# 2. Enlaza o copia a tu configuración global de Antigravity
-mkdir -p ~/.gemini/config/skills
-cp -r ~/frontend-craft-skills/skills/* ~/.gemini/config/skills/
-
-# O crea enlaces simbólicos para que los cambios se sincronicen automáticamente:
-ln -s ~/frontend-craft-skills/skills/* ~/.gemini/config/skills/
+# 2. Sync to global Antigravity config
+cd ~/skills
+./update.sh --sync-global
 ```
