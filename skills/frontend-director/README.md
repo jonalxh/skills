@@ -20,6 +20,16 @@
 
 ---
 
+## 🚫 Key Anti-AI Design Guardrails
+
+1. **No Section Start Color Badges**: Never prepend colored pill badges (e.g. `<span class="badge">✦ Features</span>`) to section titles. Section transitions should be established via spatial rhythm and typography.
+2. **Strict Sentence Case**: Headings and titles must be in **sentence case** (`"Build resilient web applications"`, never `"Build Resilient Web Applications"`). Title Case across every word is an instant AI giveaway.
+3. **Strict Contextualization**: Never assume or hallucinate features, statistics, or partnerships not present in the application. Ground every word in reality.
+4. **Visual Flow Storytelling**: Keep copy concise and dynamic. Use simple, crisp SVG icons and lightweight flow illustrations rather than dense paragraphs.
+5. **Auth & Test Account Safety**: Tests must never register or create new user accounts from scratch by default. Always use provided test credentials or seeded accounts unless explicitly instructed.
+
+---
+
 ## 🌳 Decision Tree
 
 ```
@@ -47,12 +57,16 @@ What is the nature of the frontend challenge?
 ## 🛡️ Mandatory Pre-Delivery Checklist (Anti-Slop Filter)
 
 Before delivering UI code, `frontend-director` verifies that:
-1. ❌ **No 3 identical cards** (icon + H3 + text) as the primary structure.
-2. ❌ **No text gradients** (`bg-clip-text`) or cliché purple/blue/cyan tech gradients.
-3. ❌ **No uppercase tracked-out eyebrow labels** floating above headings.
-4. ❌ **No dirty gray shadows** (`rgba(0,0,0,0.1)`) without ambient tint or crisp hairline borders.
-5. ❌ **No default Inter/Roboto** picked without design justification.
-6. ❌ **No marketing fluff** ("Powered by AI to revolutionize...").
+1. ❌ **No colored badges or pill tags** at the start of landing page sections.
+2. ❌ **No Title Case headings**: All headings are strictly in sentence case.
+3. ❌ **No hallucinated claims or assumptions** unaligned with the actual project.
+4. ❌ **No walls of text**: Copy is concise and supplemented by simple flow diagrams/icons.
+5. ❌ **No 3 identical cards** (icon + H3 + text) as the primary structure.
+6. ❌ **No text gradients** (`bg-clip-text`) or cliché purple/blue/cyan tech gradients.
+7. ❌ **No uppercase tracked-out eyebrow labels** floating above headings.
+8. ❌ **No dirty gray shadows** (`rgba(0,0,0,0.1)`) without ambient tint or crisp hairline borders.
+9. ❌ **No default Inter/Roboto** picked without design justification.
+10. ❌ **No automated tests creating accounts from zero**: Uses provided test credentials.
 
 ---
 

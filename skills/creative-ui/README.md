@@ -10,11 +10,15 @@
 ## 🚫 The Anti-Cliche Manifesto
 
 This skill strictly bans the most common hallmarks of generic AI-generated interfaces:
+- **No Section Start Color Badges**: Never place colored pill badges (e.g. `<span class="badge">✦ Features</span>`) at the top of landing page sections. Rely on spatial rhythm and typography.
+- **No Title Case Headings**: All headings, titles, and buttons must use **sentence case** (`"Start your journey"`, not `"Start Your Journey"`).
+- **No Hallucinated Claims or Assumptions**: Ground all titles and copy strictly in what the application actually provides. Never invent fake data or enterprise claims.
 - **No "SaaS Card Kit"**: No identical 3-column rounded cards with gray drop-shadows and icons on top. Favor editorial compositions, dynamic interactive lists, and asymmetric splits.
 - **No Generic Tech Gradients**: Avoid blue-to-purple gradients and gradient text (`bg-clip-text`) used as a crutch for hierarchy.
 - **No Dirty Gray Shadows**: Replace muddy drop-shadows with crisp hairline micro-borders (`border: 1px solid oklch(1 0 0 / 8%)`) or ambient-tinted elevation.
 - **No Decorative Eyebrows or Fake Numbering**: Let headings lead with their own weight. No `01 / 02 / 03` unless it is a strict chronological flow.
 - **No Emojis as Icons**: Use curated, consistent SVG stroke icons (Phosphor, Tabler, Radix).
+- **No Account Creation from Zero in Tests**: Automated tests and scripts must use existing test accounts or provided credentials, never creating accounts from scratch unless explicitly requested.
 
 ---
 
@@ -23,6 +27,7 @@ This skill strictly bans the most common hallmarks of generic AI-generated inter
 ### 1. High-Craft Minimalism (Craft & Restraint)
 - **The Statement Moment**: Every surface has one memorable visual anchor (a haptic floating bar, an asymmetric layout, a kinetic headline, or an interactive demo). Everything else remains restrained.
 - **Dynamic Negative Space**: Modular rhythmic spacing (`gap-3`, `gap-6`, `gap-12`, `gap-24`) with generous breathing room above headings.
+- **Visual Flow Storytelling**: Replace blocks of text with dynamic visual step diagrams and clean SVG icons to illustrate how the product and its workflows operate.
 - **Subtle Surface Depth**: Hairline borders, inner bevel illumination (`box-shadow: inset 0 1px 0 rgba(255,255,255,0.08)`), and micro-textures.
 
 ### 2. Color in OKLCH Space
