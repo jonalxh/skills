@@ -35,8 +35,10 @@ Skills are referenced by name; invoke them with the Skill tool. Use the ones tha
 | `impeccable` | Design commands (`shape`, `polish`, `bolder`, `distill`, `animate`, `critique`, `audit`) and `craft-floor` | Targeted refinement and the quality floor |
 | `theme-factory` | Ready palettes and font tokens | Greenfield artifacts with no existing theme |
 | `playwright-skill` | Real-browser verification | Screenshots, responsive checks, interaction states |
-| `modern-web-guidance` (optional plugin, `claude-plugins-official`) | Web standards, performance | Semantic HTML, Popover, anchor positioning, Core Web Vitals. If not installed, rely on `creative-ui` and MDN |
+| `modern-web-guidance` (plugin, see install note) | Current web-platform APIs and performance | Hand-written HTML/CSS/client JS: dialogs, popovers, anchor positioning, container queries, `:has()`, View Transitions, scroll-driven animation, Core Web Vitals |
 | `code-review-frontend` (if present) | PR-level review | Final gate on Apptega PRs |
+
+**Using `modern-web-guidance` wisely:** it is a search tool for current web-platform practice, so it is most valuable where you write raw HTML, CSS or client JS (Path A/B/E, custom CSS, animation, layout). Query it before using a native API you are unsure of, then follow its result over memory. Do not let it override the project: inside React + a component library (MUI, `apptega-ui-components`), keep using the library's Dialog, Popover, Tooltip and so on rather than swapping in native equivalents, and use the guidance only for the custom CSS and behavior the library leaves to you. Check browser support against the project's targets before adopting a new API.
 
 Optional third-party additions worth considering (review before installing): Vercel's `web-design-guidelines` (accessibility audit) and `vercel-react-best-practices` (React performance).
 

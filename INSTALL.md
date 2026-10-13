@@ -42,6 +42,16 @@ mkdir -p ~/.claude/skills
 cp -r skills/* ~/.claude/skills/
 ```
 
+### Required companion plugin (Claude Code): modern-web-guidance
+
+`frontend-director` routes web-standards and performance questions to the `modern-web-guidance` plugin from the official marketplace. It is a plugin, not part of this repo's `skills/` folder, so install it separately:
+
+```bash
+claude plugin install modern-web-guidance@claude-plugins-official
+```
+
+Without it the director still works, but falls back to `creative-ui` and MDN for web-platform guidance.
+
 ### Per Project:
 ```bash
 mkdir -p .claude/skills
